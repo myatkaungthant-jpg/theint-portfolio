@@ -20,6 +20,7 @@ import {
 } from 'lucide-react';
 import { motion, AnimatePresence } from 'motion/react';
 import { useForm, ValidationError } from '@formspree/react';
+import profileImg from './assets/profile.png';
 
 export default function App() {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -257,7 +258,7 @@ export default function App() {
                   <img 
                     alt="Theint Theint Htay Professional Headshot" 
                     className="w-full aspect-[4/5] object-cover" 
-                    src="/profile.png"
+                    src={profileImg}
                   />
                 </div>
               </div>
