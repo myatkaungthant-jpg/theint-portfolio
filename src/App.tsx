@@ -257,7 +257,7 @@ export default function App() {
                   <img 
                     alt="Theint Theint Htay Professional Headshot" 
                     className="w-full aspect-[4/5] object-cover" 
-                    src="/headshot.png"
+                    src="/photo/theint.png"
                     loading="eager"
                   />
                 </div>
