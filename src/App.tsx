@@ -257,11 +257,11 @@ export default function App() {
                   <img 
                     alt="Theint Theint Htay Professional Headshot" 
                     className="w-full aspect-[4/5] object-cover" 
-                    src="/photo/profile.png"
+                    src="/profile.png"
                     onError={(e) => {
                       const target = e.target as HTMLImageElement;
                       target.src = "https://picsum.photos/seed/professional/800/1000";
-                      console.error("Profile image failed to load at /photo/profile.png");
+                      console.error("Profile image failed to load at /profile.png");
                     }}
                     referrerPolicy="no-referrer"
                   />
