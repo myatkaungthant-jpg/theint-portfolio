@@ -1,0 +1,50 @@
+@import url('https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&display=swap');
+@import "tailwindcss";
+
+@theme {
+  --font-sans: "Plus Jakarta Sans", ui-sans-serif, system-ui, sans-serif;
+  
+  --color-primary: #2563EB;
+  --color-primary-dim: #1D4ED8;
+  --color-primary-container: #DBEAFE;
+  --color-on-primary: #FFFFFF;
+  --color-secondary: #3B82F6;
+  --color-surface: #F8FAFC;
+  --color-on-surface: #0F172A;
+  --color-on-surface-variant: #475569;
+  --color-surface-container: #F1F5F9;
+  --color-surface-container-low: #F8FAFC;
+  --color-surface-container-high: #E2E8F0;
+  --color-surface-container-highest: #CBD5E1;
+  --color-surface-container-lowest: #FFFFFF;
+  --color-outline: #94A3B8;
+  --color-outline-variant: #E2E8F0;
+}
+
+@layer base {
+  html {
+    scroll-behavior: smooth;
+  }
+  body {
+    @apply font-sans bg-surface text-on-surface;
+  }
+}
+
+.luminous-gradient {
+  background: linear-gradient(135deg, #2563EB 0%, #3B82F6 100%);
+}
+
+.luminous-text {
+  background: linear-gradient(135deg, #2563EB 0%, #1D4ED8 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.soft-mesh-gradient {
+  background-color: #f8fafc;
+  background-image: 
+    radial-gradient(at 0% 0%, hsla(253,16%,7%,0) 0, hsla(253,16%,7%,0) 50%, hsla(221,83%,53%,0.05) 100%),
+    radial-gradient(at 100% 0%, hsla(225,39%,30%,0) 0, hsla(225,39%,30%,0) 50%, hsla(334,86%,67%,0.08) 100%),
+    radial-gradient(at 100% 100%, hsla(339,49%,30%,0) 0, hsla(339,49%,30%,0) 50%, hsla(262,80%,50%,0.05) 100%),
+    radial-gradient(at 0% 100%, hsla(221,83%,53%,0) 0, hsla(221,83%,53%,0) 50%, hsla(221,83%,53%,0.05) 100%);
+}
